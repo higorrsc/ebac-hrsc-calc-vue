@@ -1,47 +1,30 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="container">
+    <h1>Calculadora em VueJS</h1>
+    <form @submit.prevent="">
+      <div class="row">
+        <div class="col-md-3">
+          <input type="number" name="" id="" placeholder="1º núm" class="form-control" value="0">
+        </div>
+        <div class="col-md-1">
+          <select name="" id="" class="form-select">
+            <option value="soma">+</option>
+            <option value="subtracao">-</option>
+            <option value="multiplicacao">*</option>
+            <option value="divisao">/</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <input type="number" name="" id="" placeholder="2º núm" class="form-control" value="0">
+        </div>
+      </div>
+    </form>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+<style scoped></style>
