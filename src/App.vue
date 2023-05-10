@@ -37,7 +37,7 @@ const calculaResultado = () => {
 
 <template>
   <div class="container">
-    <h1>Calculadora em VueJS</h1>
+    <h1>Calculadora em Vue.js</h1>
     <form @submit.prevent="">
       <div class="row mb-3">
         <label for="firstNumber" class="col-sm-2 col-form-label">1º núm</label>
